@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/home_page"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:padding="10dp">
+
+    <RelativeLayout
+        android:id="@+id/current_day"
+        android:layout_width="wrap_content"
+        android:layout_height="250dp">
+
+        <TextView
+            android:id="@+id/City"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="@string/city"
+            android:textColor="@color/teal_700"
+            android:textSize="35sp" />
+
+        <TextView
+            android:id="@+id/Time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/City"
+            android:layout_marginStart="-52dp"
+            android:layout_marginTop="10dp"
+            android:layout_toEndOf="@id/Temperature"
+            android:text="@string/hour"
+            android:textColor="@color/teal_700"
+            android:textSize="20sp"
+            tools:ignore="RelativeOverlap" />
+
+        <ImageView
+            android:id="@+id/imgIcon"
+            android:layout_width="115dp"
+            android:layout_height="110dp"
+            android:layout_below="@id/City"
+            android:layout_marginTop="10dp"
+            android:contentDescription="@string/sunny"
+            android:src="@drawable/sun" />
+
+        <TextView
+            android:id="@+id/Temperature"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Time"
+            android:layout_marginBottom="30dp"
+            android:layout_toEndOf="@id/imgIcon"
+            android:layout_marginStart="40dp"
+            android:text="@string/_0_c"
+            android:textColor="@color/teal_700"
+            android:textSize="50sp" />
+
+        <Button
+            android:id="@+id/See_more"
+            android:layout_width="120dp"
+            android:layout_height="35dp"
+            android:layout_below="@id/imgIcon"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/button"
+            android:text="@string/see_more"
+            android:textColor="#2f837f"
+            android:textSize="12sp" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="360dp"
+        android:layout_toEndOf="@id/current_day"
+        android:layout_marginStart="10dp">
+
+        <TextView
+            android:id="@+id/resume"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="@string/_5_days"
+            android:textColor="@color/teal_700"
+            android:textSize="35sp" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycle_view_resume_week"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_below="@id/resume"
+            android:layout_marginTop="10dp"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

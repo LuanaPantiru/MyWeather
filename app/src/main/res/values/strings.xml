@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">MyWeather</string>
+    <string name="see_more">See More</string>
+    <string name="today">Today</string>
+    <string name="_0_c_3_c">0°C/3°C</string>
+    <string name="take_photo">Take Photo</string>
+    <string name="start_capture">Start Capture</string>
+    <string name="stop_capture">Stop Capture</string>
+    <string name="share_your_day">Share your day</string>
+    <string name="_0_c">0°C</string>
+    <string name="sunny">sunny</string>
+    <string name="city">City</string>
+    <string name="hour">12:00</string>
+    <string name="_5_days">5 DAYS</string>
+    <string name="extended_data_about_weather_condition">Extended data about weather condition</string>
+    <string name="weather_now">Weather now</string>
+    <string name="myweather">MyWeather</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="log_in">Log In</string>
+    <string name="register">Register</string>
+    <string name="facebook_app_id">955160858502184</string>
+    <string name="fb_login_protocol_scheme">fb1234</string>
+    <string name="facebook_client_token">56789</string>
+</resources>
